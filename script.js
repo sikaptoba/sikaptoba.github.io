@@ -96,6 +96,7 @@ function tampilkanJadwal(data){
       </tr>
     `;
 
+    updateStats(data);
     return;
   }
 
@@ -113,6 +114,17 @@ function tampilkanJadwal(data){
 
   });
 
+  updateStats(data);
+}
+
+function updateStats(data){
+  const totalJadwal = data.length;
+  const totalRute = new Set(data.map(item => `${item.asal} → ${item.tujuan}`)).size;
+  const totalPelabuhan = dataJSON.pelabuhan.length;
+
+  document.getElementById("totalJadwal").textContent = totalJadwal;
+  document.getElementById("totalRute").textContent = totalRute;
+  document.getElementById("totalPelabuhan").textContent = totalPelabuhan;
 }
 
 
