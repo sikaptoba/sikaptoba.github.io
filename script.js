@@ -35,6 +35,12 @@ function normalizeJadwalArrays(jadwal){
     } else if (!Array.isArray(item.hari)) {
       item.hari = [];
     }
+
+    if (typeof item.namaKapal === "string") {
+      item.namaKapal = [item.namaKapal];
+    } else if (!Array.isArray(item.namaKapal)) {
+      item.namaKapal = [];
+    }
   });
 }
 
@@ -108,7 +114,7 @@ function tampilkanJadwal(data){
     tbody.innerHTML += `
       <tr>
         <td>${Array.isArray(item.hari) ? item.hari.join(", ") : item.hari}</td>
-        <td>${item.namaKapal}</td>
+        <td>${Array.isArray(item.namaKapal) ? item.namaKapal.join(", ") : item.namaKapal}</td>
         <td>${item.asal} → ${item.tujuan}</td>
         <td>${Array.isArray(item.jam) ? item.jam.join(", ") : item.jam}</td>
         <td>${item.penumpang.join(", ")}</td>
