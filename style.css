@@ -226,21 +226,19 @@ table tr:hover td{
 .gallery-item{
   width:100%;
   border-radius:18px;
-  overflow:hidden;
   background:#f8fbff;
   box-shadow:0 10px 30px rgba(15,23,42,0.08);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  padding:8px 0;
+  display:block;
+  padding:0;
+  max-height:72vh;
+  overflow:auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .gallery-item img{
   display:block;
-  max-width:100%;
-  width:auto;
+  width:100%;
   height:auto;
-  max-height:560px;
   object-fit:contain;
 }
 
