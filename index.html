@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jadwal Kapal Penyeberangan</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Jadwal Kapal Penyeberangan</h1>
+    <p>Informasi Jadwal Kapal dan Keberangkatan</p>
+  </header>
+
+  <div class="container">
+
+    <!-- FORM -->
+    <div class="search-box">
+
+      <div class="form-grid">
+
+        <div class="form-group">
+          <label>Pelabuhan Asal</label>
+          <select id="asal"></select>
+        </div>
+
+        <div class="form-group">
+          <label>Pelabuhan Tujuan</label>
+          <select id="tujuan"></select>
+        </div>
+
+        <div class="form-group">
+          <label>Jenis Penumpang</label>
+          <select id="penumpang"></select>
+        </div>
+
+        <div class="form-group">
+          <label>Tanggal Keberangkatan</label>
+          <input type="date" id="tanggal">
+        </div>
+
+      </div>
+
+      <button class="btn-search" onclick="filterJadwal()">
+        Cari Jadwal
+      </button>
+
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content-grid">
+
+      <!-- JADWAL -->
+      <div class="schedule-section">
+
+        <h2>Daftar Jadwal Kapal</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>Hari</th>
+              <th>Nama Kapal</th>
+              <th>Rute</th>
+              <th>Jam</th>
+              <th>Penumpang</th>
+            </tr>
+          </thead>
+
+          <tbody id="jadwalBody"></tbody>
+
+        </table>
+
+      </div>
+
+      <!-- POSTER -->
+      <div class="poster-section">
+
+        <h2>Informasi Keselamatan</h2>
+
+        <div class="poster-box">
+          <img src="img/info.png" alt="Poster Keselamatan">
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    © 2026 Sistem Informasi Jadwal Kapal
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

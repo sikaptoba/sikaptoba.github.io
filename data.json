@@ -1,0 +1,79 @@
+{
+  "pelabuhan": [
+    "Pelabuhan Bakauheni",
+    "Pelabuhan Merak",
+    "Pelabuhan Ajibata",
+    "Pelabuhan Tomok"
+  ],
+
+  "jenisPenumpang": [
+    "Orang",
+    "Roda 2",
+    "Roda 4"
+  ],
+
+  "jadwalKapal": [
+    {
+      "hari": "Senin",
+      "namaKapal": "KMP Nusantara",
+      "asal": "Pelabuhan Bakauheni",
+      "tujuan": "Pelabuhan Merak",
+      "jam": "08:00 WIB",
+      "penumpang": ["Orang", "Roda 2", "Roda 4"]
+    },
+
+    {
+      "hari": "Selasa",
+      "namaKapal": "KMP Samosir Jaya",
+      "asal": "Pelabuhan Ajibata",
+      "tujuan": "Pelabuhan Tomok",
+      "jam": "10:00 WIB",
+      "penumpang": ["Orang", "Roda 2"]
+    },
+
+    {
+      "hari": "Rabu",
+      "namaKapal": "KMP Dharma Lautan",
+      "asal": "Pelabuhan Merak",
+      "tujuan": "Pelabuhan Bakauheni",
+      "jam": "13:00 WIB",
+      "penumpang": ["Orang", "Roda 4"]
+    },
+
+    {
+      "hari": "Kamis",
+      "namaKapal": "KMP Samudera",
+      "asal": "Pelabuhan Ajibata",
+      "tujuan": "Pelabuhan Tomok",
+      "jam": "15:30 WIB",
+      "penumpang": ["Orang"]
+    },
+
+    {
+      "hari": "Jumat",
+      "namaKapal": "KMP Bahari",
+      "asal": "Pelabuhan Bakauheni",
+      "tujuan": "Pelabuhan Merak",
+      "jam": "17:00 WIB",
+      "penumpang": ["Orang", "Roda 2"]
+    },
+
+    {
+      "hari": "Sabtu",
+      "namaKapal": "KMP Indonesia Hebat",
+      "asal": "Pelabuhan Merak",
+      "tujuan": "Pelabuhan Bakauheni",
+      "jam": "20:00 WIB",
+      "penumpang": ["Orang", "Roda 2", "Roda 4"]
+    },
+
+    {
+      "hari": "Minggu",
+      "namaKapal": "KMP Express",
+      "asal": "Pelabuhan Ajibata",
+      "tujuan": "Pelabuhan Tomok",
+      "jam": "09:00 WIB",
+      "penumpang": ["Orang", "Roda 2"]
+    }
+  ]
+}
