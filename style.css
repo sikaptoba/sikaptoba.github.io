@@ -229,13 +229,19 @@ table tr:hover td{
   overflow:hidden;
   background:#f8fbff;
   box-shadow:0 10px 30px rgba(15,23,42,0.08);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:8px 0;
 }
 
 .gallery-item img{
   display:block;
-  width:100%;
+  max-width:100%;
+  width:auto;
   height:auto;
-  object-fit:cover;
+  max-height:560px;
+  object-fit:contain;
 }
 
 .gallery-scroll::-webkit-scrollbar{
