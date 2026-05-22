@@ -13,6 +13,9 @@ fetch("data.json")
 
     tampilkanJadwal(dataJSON.jadwalKapal);
 
+    // load safety gallery dynamically
+    loadSafetyGallery();
+
   });
 
 
@@ -125,6 +128,70 @@ function updateStats(data){
   document.getElementById("totalJadwal").textContent = totalJadwal;
   document.getElementById("totalRute").textContent = totalRute;
   document.getElementById("totalPelabuhan").textContent = totalPelabuhan;
+}
+
+
+// ============================
+// SAFETY GALLERY (dynamic)
+// ============================
+function loadSafetyGallery(){
+  const galleryEl = document.getElementById('galleryScroll');
+  if(!galleryEl) return;
+
+  // try to load a manifest file listing images
+  fetch('img/info-keselamatan/list.json')
+    .then(resp => {
+      if(!resp.ok) throw new Error('No manifest');
+      return resp.json();
+    })
+    .then(list => renderSafetyGallery(list))
+    .catch(() => {
+      // manifest not available — try fetching directory index HTML (if server exposes it)
+      fetch('img/info-keselamatan/')
+        .then(r => {
+          if(!r.ok) throw new Error('No dir listing');
+          return r.text();
+        })
+        .then(html => {
+          try {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, 'text/html');
+            const anchors = Array.from(doc.querySelectorAll('a'));
+            const images = anchors
+              .map(a => a.getAttribute('href'))
+              .filter(h => h && /\.(png|jpe?g|gif|webp)$/i.test(h))
+              .map(h => h.replace(/^\.\/|^\//, ''));
+
+            if(images.length) return renderSafetyGallery(images);
+            throw new Error('No images in dir listing');
+          } catch (e) {
+            throw e;
+          }
+        })
+        .catch(() => {
+          // final fallback to common filenames
+          const fallback = ['info.png', 'Gemini_Generated_Image_dri9kzdri9kzdri9.png'];
+          renderSafetyGallery(fallback);
+        });
+    });
+}
+
+function renderSafetyGallery(list){
+  const galleryEl = document.getElementById('galleryScroll');
+  if(!galleryEl) return;
+  galleryEl.innerHTML = '';
+
+  list.forEach(filename => {
+    if(!filename) return;
+    const item = document.createElement('div');
+    item.className = 'gallery-item';
+    const img = document.createElement('img');
+    // if filename is already a path, use it, otherwise prefix folder
+    img.src = /\//.test(filename) ? filename : `img/info-keselamatan/${filename}`;
+    img.alt = 'Poster Keselamatan';
+    item.appendChild(img);
+    galleryEl.appendChild(item);
+  });
 }
 
 
