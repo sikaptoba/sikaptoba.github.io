@@ -7,7 +7,7 @@ fetch("data.json")
 
     dataJSON = data;
 
-    normalizeJadwalJam(dataJSON.jadwalKapal);
+    normalizeJadwalArrays(dataJSON.jadwalKapal);
 
     loadDropdown();
 
@@ -17,14 +17,20 @@ fetch("data.json")
 
 
 // ============================
-// NORMALIZE JAM
+// NORMALIZE JAM & HARI
 // ============================
-function normalizeJadwalJam(jadwal){
+function normalizeJadwalArrays(jadwal){
   jadwal.forEach(item => {
     if (typeof item.jam === "string") {
       item.jam = [item.jam];
     } else if (!Array.isArray(item.jam)) {
       item.jam = [];
+    }
+
+    if (typeof item.hari === "string") {
+      item.hari = [item.hari];
+    } else if (!Array.isArray(item.hari)) {
+      item.hari = [];
     }
   });
 }
@@ -97,7 +103,7 @@ function tampilkanJadwal(data){
 
     tbody.innerHTML += `
       <tr>
-        <td>${item.hari}</td>
+        <td>${Array.isArray(item.hari) ? item.hari.join(", ") : item.hari}</td>
         <td>${item.namaKapal}</td>
         <td>${item.asal} → ${item.tujuan}</td>
         <td>${Array.isArray(item.jam) ? item.jam.join(", ") : item.jam}</td>
