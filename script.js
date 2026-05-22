@@ -181,17 +181,20 @@ function renderSafetyGallery(list){
   if(!galleryEl) return;
   galleryEl.innerHTML = '';
 
+  // create a single stacked container of images (one scroll area)
+  const stack = document.createElement('div');
+  stack.className = 'gallery-stack';
+
   list.forEach(filename => {
     if(!filename) return;
-    const item = document.createElement('div');
-    item.className = 'gallery-item';
     const img = document.createElement('img');
-    // if filename is already a path, use it, otherwise prefix folder
+    img.className = 'gallery-image';
     img.src = /\//.test(filename) ? filename : `img/info-keselamatan/${filename}`;
     img.alt = 'Poster Keselamatan';
-    item.appendChild(img);
-    galleryEl.appendChild(item);
+    stack.appendChild(img);
   });
+
+  galleryEl.appendChild(stack);
 }
 
 
