@@ -3,7 +3,9 @@
     "Pelabuhan Bakauheni",
     "Pelabuhan Merak",
     "Pelabuhan Ajibata",
-    "Pelabuhan Tomok"
+    "Pelabuhan Tomok",
+    "Pelabuhan Onan Baru",
+    "Pelabuhan Sibeabea"
   ],
 
   "jenisPenumpang": [
@@ -21,7 +23,14 @@
       "jam": "08:00 WIB",
       "penumpang": ["Orang", "Roda 2", "Roda 4"]
     },
-
+{
+      "hari": "Senin",
+      "namaKapal": "KMP Sibiobio",
+      "asal": "Pelabuhan Onan Baro",
+      "tujuan": "Pelabuhan Sibeabea",
+      "jam": "08:00 WIB",
+      "penumpang": ["Orang", "Roda 2", "Roda 4"]
+    },
     {
       "hari": "Selasa",
       "namaKapal": "KMP Samosir Jaya",
