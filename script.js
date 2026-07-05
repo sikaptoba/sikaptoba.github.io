@@ -25,6 +25,7 @@ function ambilData() {
 }
 
 setState("loading");
+loadSafetyGallery();
 
 ambilData()
   .then((data) => {
@@ -37,9 +38,6 @@ ambilData()
     tampilkanJadwal(dataJSON.jadwal);
 
     setState("ready");
-
-    // load safety gallery dynamically
-    loadSafetyGallery();
   })
   .catch((err) => {
     console.error("Gagal memuat jadwal:", err);
@@ -245,7 +243,11 @@ function loadSafetyGallery() {
     .then((list) => renderSafetyGallery(list))
     .catch(() => {
       // manifest tak terbaca -> fallback ke nama file yang diketahui
-      renderSafetyGallery(["1-panduan-keselamatan.png", "2-barang-pribadi.png"]);
+      renderSafetyGallery([
+        "1-panduan-keselamatan.png",
+        "2-barang-pribadi.png",
+        "3-keselamatan.png",
+      ]);
     });
 }
 
