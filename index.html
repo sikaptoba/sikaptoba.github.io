@@ -1,115 +1,204 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jadwal Kapal Penyeberangan</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jadwal Kapal Penyeberangan — Danau Toba</title>
 
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <header>
-    <h1>Jadwal Kapal Penyeberangan</h1>
-    <p>Informasi Jadwal Kapal dan Keberangkatan</p>
-  </header>
-
-  <div class="container">
-
-    <div class="stats-grid">
-      <div class="stat-card">
-        <span class="stat-label">Total Jadwal</span>
-        <span class="stat-value" id="totalJadwal">0</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-label">Rute Aktif</span>
-        <span class="stat-value" id="totalRute">0</span>
-      </div>
-      <div class="stat-card">
-        <span class="stat-label">Pelabuhan</span>
-        <span class="stat-value" id="totalPelabuhan">0</span>
-      </div>
-    </div>
-
-    <!-- FORM -->
-    <div class="search-box">
-
-      <div class="form-grid">
-
-        <div class="form-group">
-          <label>Pelabuhan Asal</label>
-          <select id="asal"></select>
+    <link rel="icon" type="image/svg+xml" href="img/icon/logo-only.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===== HEADER / HERO ===== -->
+    <header class="hero">
+      <div class="hero-inner">
+        <div class="brand">
+          <img
+            src="img/icon/logo-with-title.png"
+            alt="Logo"
+            class="brand-logo"
+            onerror="this.style.display = 'none'"
+          />
+          <div class="brand-text">
+            <h1>Jadwal Kapal Penyeberangan</h1>
+            <p>
+              Informasi jadwal &amp; keberangkatan kapal — Danau Toba, Samosir
+            </p>
+          </div>
         </div>
-
-        <div class="form-group">
-          <label>Pelabuhan Tujuan</label>
-          <select id="tujuan"></select>
-        </div>
-
-        <div class="form-group">
-          <label>Jenis Penumpang</label>
-          <select id="penumpang"></select>
-        </div>
-
-        <div class="form-group">
-          <label>Tanggal Keberangkatan</label>
-          <input type="date" id="tanggal">
-        </div>
-
       </div>
+      <svg
+        class="hero-wave"
+        viewBox="0 0 1440 90"
+        preserveAspectRatio="none"
+        aria-hidden="true"
+      >
+        <path
+          d="M0,50 C240,90 480,10 720,40 C960,70 1200,20 1440,45 L1440,90 L0,90 Z"
+        ></path>
+      </svg>
+    </header>
 
-      <button class="btn-search" onclick="filterJadwal()">
-        Cari Jadwal
-      </button>
-
-    </div>
-
-    <!-- CONTENT -->
-    <div class="content-grid">
-
-      <!-- JADWAL -->
-      <div class="schedule-section">
-
-        <h2>Daftar Jadwal Kapal</h2>
-
-        <table>
-          <thead>
-            <tr>
-              <th>Hari</th>
-              <th>Nama Kapal</th>
-              <th>Rute</th>
-              <th>Jam</th>
-              <th>Penumpang</th>
-            </tr>
-          </thead>
-
-          <tbody id="jadwalBody"></tbody>
-
-        </table>
-
-      </div>
-
-      <!-- SAFETY INFO -->
-      <div class="poster-section">
-
-        <h2>Informasi Keselamatan</h2>
-        <p class="section-text">Panduan dan tips keselamatan untuk penumpang. Geser bilah ini jika terdapat beberapa poster.</p>
-
-        <div class="gallery-scroll" id="galleryScroll">
-          <!-- gallery populated dynamically from img/info-keselamatan/list.json -->
+    <main class="container">
+      <!-- ===== STATS ===== -->
+      <section class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-icon" style="--c: #0ea5e9">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M3 18l2-6h14l2 6" />
+              <path d="M12 12V5" />
+              <path d="M8 5h8" />
+              <path d="M3 18c0 0 3 3 9 3s9-3 9-3" />
+            </svg>
+          </span>
+          <div>
+            <span class="stat-value" id="totalJadwal">0</span>
+            <span class="stat-label">Total Jadwal</span>
+          </div>
         </div>
+        <div class="stat-card">
+          <span class="stat-icon" style="--c: #14b8a6">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <circle cx="6" cy="19" r="2" />
+              <circle cx="18" cy="5" r="2" />
+              <path d="M8 19h6a4 4 0 0 0 4-4V7" />
+            </svg>
+          </span>
+          <div>
+            <span class="stat-value" id="totalRute">0</span>
+            <span class="stat-label">Rute Aktif</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <span class="stat-icon" style="--c: #6366f1">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z" />
+              <circle cx="12" cy="10" r="2.5" />
+            </svg>
+          </span>
+          <div>
+            <span class="stat-value" id="totalPelabuhan">0</span>
+            <span class="stat-label">Dermaga</span>
+          </div>
+        </div>
+      </section>
 
+      <!-- ===== FORM PENCARIAN ===== -->
+      <section class="search-box">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="asal">Dermaga Asal</label>
+            <select id="asal"></select>
+          </div>
+          <div class="form-group">
+            <label for="tujuan">Dermaga Tujuan</label>
+            <select id="tujuan"></select>
+          </div>
+          <div class="form-group">
+            <label for="penumpang">Jenis Penumpang</label>
+            <select id="penumpang"></select>
+          </div>
+          <div class="form-group">
+            <label for="tanggal">Tanggal Keberangkatan</label>
+            <input type="date" id="tanggal" />
+          </div>
+        </div>
+        <div class="search-actions">
+          <button class="btn-search" onclick="filterJadwal()">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              width="18"
+              height="18"
+            >
+              <circle cx="11" cy="11" r="7" />
+              <path d="m21 21-4.3-4.3" />
+            </svg>
+            Cari Jadwal
+          </button>
+          <button class="btn-reset" onclick="resetFilter()">Reset</button>
+        </div>
+      </section>
+
+      <!-- ===== KONTEN ===== -->
+      <div class="content-grid">
+        <!-- JADWAL -->
+        <section class="schedule-section">
+          <div class="section-head">
+            <h2>Daftar Jadwal Kapal</h2>
+            <span class="result-count" id="resultCount">—</span>
+          </div>
+
+          <!-- state: loading -->
+          <div class="state" id="stateLoading">
+            <div class="spinner"></div>
+            <p>Memuat jadwal…</p>
+          </div>
+
+          <!-- state: error -->
+          <div class="state" id="stateError" hidden>
+            <div class="state-emoji">⚠️</div>
+            <p id="stateErrorMsg">Gagal memuat data.</p>
+            <button class="btn-reset" onclick="location.reload()">
+              Coba lagi
+            </button>
+          </div>
+
+          <!-- tabel -->
+          <div class="table-wrap" id="tableWrap" hidden>
+            <table>
+              <thead>
+                <tr>
+                  <th>Rute</th>
+                  <th>Kapal</th>
+                  <th>Jam</th>
+                  <th>Penumpang</th>
+                </tr>
+              </thead>
+              <tbody id="jadwalBody"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <!-- INFO KESELAMATAN -->
+        <aside class="poster-section">
+          <h2>Informasi Keselamatan</h2>
+          <p class="section-text">
+            Panduan dan tips keselamatan untuk penumpang. Geser bilah ini jika
+            terdapat beberapa poster.
+          </p>
+          <div class="gallery-scroll" id="galleryScroll"></div>
+        </aside>
       </div>
+    </main>
 
-    </div>
+    <footer>© 2026 Sistem Informasi Jadwal Kapal — Danau Toba</footer>
 
-  </div>
-
-  <footer>
-    © 2026 Sistem Informasi Jadwal Kapal
-  </footer>
-
-  <script src="script.js"></script>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

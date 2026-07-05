@@ -1,81 +1,1774 @@
 {
-  "pelabuhan": [
-    
-    
-    "Pelabuhan Ajibata",
-    "Pelabuhan Tomok",
-    "Pelabuhan Onan Baru",
-    "Pelabuhan Sibeabea",
-    "Pelabuhan Simanindo"
+  "meta": {
+    "diperbarui": "2026-07-05",
+    "jumlahRute": 20,
+    "sumber": "Google Sheet (fallback lokal)"
+  },
+  "dermaga": [
+    "Binangara",
+    "Bonan Dolok",
+    "Buntu Mauli",
+    "Hasinggaan",
+    "Holbung",
+    "Janji Raja",
+    "Mogang",
+    "Nainggolan",
+    "Onan Baru Pangururan",
+    "Onan Sait",
+    "Pinal",
+    "Pintu Batu",
+    "Sabulan",
+    "Sibea-bea",
+    "Sihotang",
+    "Tarabunga",
+    "Tulas"
   ],
-
   "jenisPenumpang": [
     "Orang",
-    "Roda 2",
-    "Roda 4"
+    "Roda 2"
   ],
-
-  "jadwalKapal": [
+  "jadwal": [
     {
-      "hari": ["Senin"],
-      "namaKapal": ["KMP Nusantara", "KMP Sibiobio"],
-      "asal": "Pelabuhan Bakauheni",
-      "tujuan": "Pelabuhan Merak",
-      "jam": ["08:00 WIB", "10:00 WIB"],
-      "penumpang": ["Orang", "Roda 2", "Roda 4"]
+      "grup": 1,
+      "arah": "Berangkat",
+      "asal": "Onan Baru Pangururan",
+      "tujuan": "Tulas",
+      "jam": [
+        "14.00"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. TARINGOTAN",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. LASROHA",
+          "hari": "Rabu"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "Hari Rabu adalah kapal yang menuju/kembali dari Pekan Onan Pangururan."
     },
     {
-      "hari": ["Selasa"],
-      "namaKapal": "KMP Samosir Jaya",
-      "asal": "Pelabuhan Ajibata",
-      "tujuan": "Pelabuhan Tomok",
-      "jam": ["10:00 WIB"],
-      "penumpang": ["Orang", "Roda 2"]
+      "grup": 1,
+      "arah": "Kembali",
+      "asal": "Tulas",
+      "tujuan": "Onan Baru Pangururan",
+      "jam": [
+        "08.00"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. TARINGOTAN",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. LASROHA",
+          "hari": "Rabu"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "Hari Rabu adalah kapal yang menuju/kembali dari Pekan Onan Pangururan."
     },
-
     {
-      "hari": ["Rabu"],
-      "namaKapal": "KMP Dharma Lautan",
-      "asal": "Pelabuhan Merak",
-      "tujuan": "Pelabuhan Bakauheni",
-      "jam": ["13:00 WIB"],
-      "penumpang": ["Orang", "Roda 4"]
+      "grup": 2,
+      "arah": "Berangkat",
+      "asal": "Onan Baru Pangururan",
+      "tujuan": "Bonan Dolok",
+      "jam": [
+        "14.00"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. BETA 5",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. PERLINDUNGAN",
+          "hari": "Rabu"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": ""
     },
-
     {
-      "hari": ["Kamis"],
-      "namaKapal": "KMP Samudera",
-      "asal": "Pelabuhan Ajibata",
-      "tujuan": "Pelabuhan Tomok",
-      "jam": ["15:30 WIB"],
-      "penumpang": ["Orang"]
+      "grup": 2,
+      "arah": "Kembali",
+      "asal": "Bonan Dolok",
+      "tujuan": "Onan Baru Pangururan",
+      "jam": [
+        "08.00"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. BETA 5",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. PERLINDUNGAN",
+          "hari": "Rabu"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": ""
     },
-
     {
-      "hari": ["Jumat"],
-      "namaKapal": "KMP Bahari",
-      "asal": "Pelabuhan Bakauheni",
-      "tujuan": "Pelabuhan Merak",
-      "jam": ["17:00 WIB"],
-      "penumpang": ["Orang", "Roda 2"]
+      "grup": 3,
+      "arah": "Berangkat",
+      "asal": "Onan Baru Pangururan",
+      "tujuan": "Hasinggaan",
+      "jam": [
+        "14.00"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. TARINGOTAN",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. LASROHA",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. DOSROHA",
+          "hari": "Rabu"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": ""
     },
-
     {
-      "hari": ["Sabtu"],
-      "namaKapal": "KMP Indonesia Hebat",
-      "asal": "Pelabuhan Merak",
-      "tujuan": "Pelabuhan Bakauheni",
-      "jam": ["20:00 WIB"],
-      "penumpang": ["Orang", "Roda 2", "Roda 4"]
+      "grup": 3,
+      "arah": "Kembali",
+      "asal": "Hasinggaan",
+      "tujuan": "Onan Baru Pangururan",
+      "jam": [
+        "08.00"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. TARINGOTAN",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. LASROHA",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. DOSROHA",
+          "hari": "Rabu"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": ""
     },
-
     {
-      "hari": ["Minggu"],
-      "namaKapal": "KMP Express",
-      "asal": "Pelabuhan Ajibata",
-      "tujuan": "Pelabuhan Tomok",
-      "jam": ["09:00 WIB"],
-      "penumpang": ["Orang", "Roda 2"]
+      "grup": 4,
+      "arah": "Berangkat",
+      "asal": "Onan Baru Pangururan",
+      "tujuan": "Binangara",
+      "jam": [
+        "14.00"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. SUMBERBAWANG",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. MARTIPAN",
+          "hari": "Setiap Hari"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": ""
+    },
+    {
+      "grup": 4,
+      "arah": "Kembali",
+      "asal": "Binangara",
+      "tujuan": "Onan Baru Pangururan",
+      "jam": [
+        "08.00"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. SUMBERBAWANG",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. MARTIPAN",
+          "hari": "Setiap Hari"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": ""
+    },
+    {
+      "grup": 5,
+      "arah": "Berangkat",
+      "asal": "Onan Baru Pangururan",
+      "tujuan": "Sihotang",
+      "jam": [
+        "15.00",
+        "16.30 (anak sekolah)"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. ASIDO",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. ROTUA",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. SOIT TOBA",
+          "hari": "Rabu"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "KM. ROTUA khusus untuk anak sekolah."
+    },
+    {
+      "grup": 5,
+      "arah": "Kembali",
+      "asal": "Sihotang",
+      "tujuan": "Onan Baru Pangururan",
+      "jam": [
+        "08.00",
+        "06.30 (anak sekolah)"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. ASIDO",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. ROTUA",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. SOIT TOBA",
+          "hari": "Rabu"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "KM. ROTUA khusus untuk anak sekolah."
+    },
+    {
+      "grup": 6,
+      "arah": "Berangkat",
+      "asal": "Onan Baru Pangururan",
+      "tujuan": "Holbung",
+      "jam": [
+        "14.00"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. ANDIRI",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. ANUGERAH STAR",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. UPDATU TRANS",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. ARSIM JAYA TOUR",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. ANGEL 76",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. SANTUN NGOLU",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. DOSROHA ROULI",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. SUTRA JAYA TOUR",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. RONAULI",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. HAROAN NAULI",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. CARLI",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. TAPIAN NAULI",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. SUMBER PRIMA JAYA",
+          "hari": "Rabu"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "Kapal beroperasi secara bergantian."
+    },
+    {
+      "grup": 6,
+      "arah": "Kembali",
+      "asal": "Holbung",
+      "tujuan": "Onan Baru Pangururan",
+      "jam": [
+        "07.00"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. ANDIRI",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. ANUGERAH STAR",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. UPDATU TRANS",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. ARSIM JAYA TOUR",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. ANGEL 76",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. SANTUN NGOLU",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. DOSROHA ROULI",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. SUTRA JAYA TOUR",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. RONAULI",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. HAROAN NAULI",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. CARLI",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. TAPIAN NAULI",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. SUMBER PRIMA JAYA",
+          "hari": "Rabu"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "Kapal beroperasi secara bergantian."
+    },
+    {
+      "grup": 7,
+      "arah": "Berangkat",
+      "asal": "Onan Baru Pangururan",
+      "tujuan": "Pinal",
+      "jam": [
+        "14.00"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. MARTIPAN",
+          "hari": "Setiap Hari"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": ""
+    },
+    {
+      "grup": 7,
+      "arah": "Kembali",
+      "asal": "Pinal",
+      "tujuan": "Onan Baru Pangururan",
+      "jam": [
+        "08.00"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. MARTIPAN",
+          "hari": "Setiap Hari"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": ""
+    },
+    {
+      "grup": 8,
+      "arah": "Berangkat",
+      "asal": "Onan Baru Pangururan",
+      "tujuan": "Buntu Mauli",
+      "jam": [
+        "14.00"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. SABARMAHITA",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. LAMHOT",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. LASPAHOT",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. RANGSANGBOSI NAULI",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. DOSROHA RANGSANG BOSI",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. SAMRI",
+          "hari": "Rabu"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "Kapal beroperasi secara bergantian."
+    },
+    {
+      "grup": 8,
+      "arah": "Kembali",
+      "asal": "Buntu Mauli",
+      "tujuan": "Onan Baru Pangururan",
+      "jam": [
+        "08.00"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. SABARMAHITA",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. LAMHOT",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. LASPAHOT",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. RANGSANGBOSI NAULI",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. DOSROHA RANGSANG BOSI",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. SAMRI",
+          "hari": "Rabu"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "Kapal beroperasi secara bergantian."
+    },
+    {
+      "grup": 9,
+      "arah": "Berangkat",
+      "asal": "Onan Baru Pangururan",
+      "tujuan": "Sabulan",
+      "jam": [
+        "14.00"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. HOTTUA",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. LAMHORAS",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. TELUK",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. ALDI ARJUNA",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. LASROHA",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. TELAGA PARSAULIAN",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. BONA TUA",
+          "hari": "Rabu"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "Kapal beroperasi secara bergantian."
+    },
+    {
+      "grup": 9,
+      "arah": "Kembali",
+      "asal": "Sabulan",
+      "tujuan": "Onan Baru Pangururan",
+      "jam": [
+        "07.00"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. HOTTUA",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. LAMHORAS",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. TELUK",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. ALDI ARJUNA",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. LASROHA",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. TELAGA PARSAULIAN",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. BONA TUA",
+          "hari": "Rabu"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "Kapal beroperasi secara bergantian."
+    },
+    {
+      "grup": 10,
+      "arah": "Berangkat",
+      "asal": "Onan Baru Pangururan",
+      "tujuan": "Janji Raja",
+      "jam": [
+        "14.00"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. ANDIRI",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. ANUGERAH STAR",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. UPDATU TRANS",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. ARSIM JAYA TOUR",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. ANGEL 76",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. SANTUN NGOLU",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. DOSROHA ROULI",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. SUTRA JAYA TOUR",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. RONAULI",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. HAROAN NAULI",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. CARLI",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. TAPIAN NAULI",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. SUMBER PRIMA JAYA",
+          "hari": "Rabu"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "Kapal beroperasi secara bergantian."
+    },
+    {
+      "grup": 10,
+      "arah": "Kembali",
+      "asal": "Janji Raja",
+      "tujuan": "Onan Baru Pangururan",
+      "jam": [
+        "07.00"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. ANDIRI",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. ANUGERAH STAR",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. UPDATU TRANS",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. ARSIM JAYA TOUR",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. ANGEL 76",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. SANTUN NGOLU",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. DOSROHA ROULI",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. SUTRA JAYA TOUR",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. RONAULI",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. HAROAN NAULI",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. CARLI",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. TAPIAN NAULI",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. SUMBER PRIMA JAYA",
+          "hari": "Rabu"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "Kapal beroperasi secara bergantian."
+    },
+    {
+      "grup": 11,
+      "arah": "Berangkat",
+      "asal": "Onan Baru Pangururan",
+      "tujuan": "Onan Sait",
+      "jam": [
+        "14.00"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. TANI GULTOM",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. MIKEL TAMBA",
+          "hari": "Rabu"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "Kapal beroperasi secara bergantian."
+    },
+    {
+      "grup": 11,
+      "arah": "Kembali",
+      "asal": "Onan Sait",
+      "tujuan": "Onan Baru Pangururan",
+      "jam": [
+        "08.00"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. TANI GULTOM",
+          "hari": "Rabu"
+        },
+        {
+          "nama": "KM. MIKEL TAMBA",
+          "hari": "Rabu"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "Kapal beroperasi secara bergantian."
+    },
+    {
+      "grup": 12,
+      "arah": "Berangkat",
+      "asal": "Onan Baru Pangururan",
+      "tujuan": "Sibea-bea",
+      "jam": [
+        "08.00–18.00 (sesuai penumpang)"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. SIBIO-BIO 01",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. SIBIO-BIO 02",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. RODAME",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. HILLO",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. HAULO",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. MONICA CRUISE",
+          "hari": "Setiap Hari"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "Keberangkatan menyesuaikan ada/tidaknya penumpang menuju objek wisata Sibea-bea."
+    },
+    {
+      "grup": 12,
+      "arah": "Kembali",
+      "asal": "Sibea-bea",
+      "tujuan": "Onan Baru Pangururan",
+      "jam": [
+        "08.00–18.00 (sesuai penumpang)"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. SIBIO-BIO 01",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. SIBIO-BIO 02",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. RODAME",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. HILLO",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. HAULO",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. MONICA CRUISE",
+          "hari": "Setiap Hari"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "Keberangkatan menyesuaikan ada/tidaknya penumpang menuju objek wisata Sibea-bea."
+    },
+    {
+      "grup": 13,
+      "arah": "Berangkat",
+      "asal": "Mogang",
+      "tujuan": "Sabulan",
+      "jam": [
+        "08.00",
+        "10.00",
+        "12.00",
+        "14.00",
+        "16.00",
+        "18.00"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. HOTTUA",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. LAMHORAS",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. TELUK",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. ALDI ARJUNA",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. LASROHA",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. TELAGA PARSAULIAN",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. BONA TUA",
+          "hari": "Setiap Hari"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "Kapal beroperasi setiap hari secara bergantian."
+    },
+    {
+      "grup": 13,
+      "arah": "Kembali",
+      "asal": "Sabulan",
+      "tujuan": "Mogang",
+      "jam": [
+        "07.00",
+        "09.00",
+        "11.00",
+        "13.00",
+        "15.00",
+        "17.00"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. HOTTUA",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. LAMHORAS",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. TELUK",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. ALDI ARJUNA",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. LASROHA",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. TELAGA PARSAULIAN",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. BONA TUA",
+          "hari": "Setiap Hari"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "Kapal beroperasi setiap hari secara bergantian."
+    },
+    {
+      "grup": 14,
+      "arah": "Berangkat",
+      "asal": "Mogang",
+      "tujuan": "Holbung",
+      "jam": [
+        "15.00"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. ANDIRI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. ANUGERAH STAR",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. UPDATU TRANS",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. ARSIM JAYA TOUR",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. ANGEL 76",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. SANTUN NGOLU",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. DOSROHA ROULI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. SUTRA JAYA TOUR",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. RONAULI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. HAROAN NAULI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. CARLI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. TAPIAN NAULI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. SUMBER PRIMA JAYA",
+          "hari": "Setiap Hari"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "Kapal beroperasi setiap hari secara bergantian."
+    },
+    {
+      "grup": 14,
+      "arah": "Kembali",
+      "asal": "Holbung",
+      "tujuan": "Mogang",
+      "jam": [
+        "08.00"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. ANDIRI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. ANUGERAH STAR",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. UPDATU TRANS",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. ARSIM JAYA TOUR",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. ANGEL 76",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. SANTUN NGOLU",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. DOSROHA ROULI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. SUTRA JAYA TOUR",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. RONAULI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. HAROAN NAULI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. CARLI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. TAPIAN NAULI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. SUMBER PRIMA JAYA",
+          "hari": "Setiap Hari"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "Kapal beroperasi setiap hari secara bergantian."
+    },
+    {
+      "grup": 15,
+      "arah": "Berangkat",
+      "asal": "Mogang",
+      "tujuan": "Janji Raja",
+      "jam": [
+        "15.00"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. ANDIRI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. ANUGERAH STAR",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. UPDATU TRANS",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. ARSIM JAYA TOUR",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. ANGEL 76",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. SANTUN NGOLU",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. DOSROHA ROULI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. SUTRA JAYA TOUR",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. RONAULI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. HAROAN NAULI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. CARLI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. TAPIAN NAULI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. SUMBER PRIMA JAYA",
+          "hari": "Setiap Hari"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "Kapal beroperasi setiap hari secara bergantian."
+    },
+    {
+      "grup": 15,
+      "arah": "Kembali",
+      "asal": "Janji Raja",
+      "tujuan": "Mogang",
+      "jam": [
+        "08.00"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. ANDIRI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. ANUGERAH STAR",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. UPDATU TRANS",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. ARSIM JAYA TOUR",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. ANGEL 76",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. SANTUN NGOLU",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. DOSROHA ROULI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. SUTRA JAYA TOUR",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. RONAULI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. HAROAN NAULI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. CARLI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. TAPIAN NAULI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. SUMBER PRIMA JAYA",
+          "hari": "Setiap Hari"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "Kapal beroperasi setiap hari secara bergantian."
+    },
+    {
+      "grup": 16,
+      "arah": "Berangkat",
+      "asal": "Mogang",
+      "tujuan": "Buntu Mauli",
+      "jam": [
+        "14.00",
+        "16.00 (anak sekolah)"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. SABARMAHITA",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. LAMHOT",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. LASPAHOT",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. RANGSANGBOSI NAULI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. DOSROHA RANGSANG BOSI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. SAMRI",
+          "hari": "Setiap Hari"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "Melayani anak sekolah (berangkat awal dari Buntu Mauli), bergantian setiap hari; hari Selasa bergantian menuju Pekan Mogang."
+    },
+    {
+      "grup": 16,
+      "arah": "Kembali",
+      "asal": "Buntu Mauli",
+      "tujuan": "Mogang",
+      "jam": [
+        "06.30 (anak sekolah)",
+        "09.00 (Selasa Pekan Mogang)"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. SABARMAHITA",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. LAMHOT",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. LASPAHOT",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. RANGSANGBOSI NAULI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. DOSROHA RANGSANG BOSI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. SAMRI",
+          "hari": "Setiap Hari"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "Melayani anak sekolah (berangkat awal dari Buntu Mauli), bergantian setiap hari; hari Selasa bergantian menuju Pekan Mogang."
+    },
+    {
+      "grup": 17,
+      "arah": "Berangkat",
+      "asal": "Pintu Batu",
+      "tujuan": "Sihotang",
+      "jam": [
+        "24 jam (sesuai penumpang)"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. LAGAN 1",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. LAGAN 2",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. ONTINEL SIHALOHO",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. SITOLU BAHAL",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. MARTAULI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. PANDI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. MARGOGOHON TANGIANG",
+          "hari": "Setiap Hari"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "Kapal yang beroperasi di Dermaga Sihotang: KM. ASIDO 6, KM. ROTUA 1, KM. SOIT TOBA 1 dan 2, KM. BETAHAMU 1, 2 dan 3."
+    },
+    {
+      "grup": 17,
+      "arah": "Kembali",
+      "asal": "Sihotang",
+      "tujuan": "Pintu Batu",
+      "jam": [
+        "24 jam (sesuai penumpang)"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. LAGAN 1",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. LAGAN 2",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. ONTINEL SIHALOHO",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. SITOLU BAHAL",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. MARTAULI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. PANDI",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. MARGOGOHON TANGIANG",
+          "hari": "Setiap Hari"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "Kapal yang beroperasi di Dermaga Sihotang: KM. ASIDO 6, KM. ROTUA 1, KM. SOIT TOBA 1 dan 2, KM. BETAHAMU 1, 2 dan 3."
+    },
+    {
+      "grup": 18,
+      "arah": "Berangkat",
+      "asal": "Tarabunga",
+      "tujuan": "Onan Sait",
+      "jam": [
+        "24 jam (sesuai penumpang)"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. RAJANAUBANON",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. SINTA MARDONGAN",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. PUTRATAMBA",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. RISOMAS",
+          "hari": "Setiap Hari"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "Beroperasi situasional (bila ada penumpang atau kendaraan). CATATAN DATA: pada sumber, arah kembali tertulis \"Buntu Mauli – Mogang\" (tidak konsisten) — di sini diasumsikan Onan Sait → Tarabunga, mohon dikonfirmasi."
+    },
+    {
+      "grup": 18,
+      "arah": "Kembali",
+      "asal": "Onan Sait",
+      "tujuan": "Tarabunga",
+      "jam": [
+        "24 jam (sesuai penumpang)"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. RAJANAUBANON",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. SINTA MARDONGAN",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. PUTRATAMBA",
+          "hari": "Setiap Hari"
+        },
+        {
+          "nama": "KM. RISOMAS",
+          "hari": "Setiap Hari"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "Beroperasi situasional (bila ada penumpang atau kendaraan). CATATAN DATA: pada sumber, arah kembali tertulis \"Buntu Mauli – Mogang\" (tidak konsisten) — di sini diasumsikan Onan Sait → Tarabunga, mohon dikonfirmasi."
+    },
+    {
+      "grup": 19,
+      "arah": "Berangkat",
+      "asal": "Nainggolan",
+      "tujuan": "Janji Raja",
+      "jam": [
+        "14.00"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. ANDIRI",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. ANUGERAH STAR",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. UPDATU TRANS",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. ARSIM JAYA TOUR",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. ANGEL 76",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. SANTUN NGOLU",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. DOSROHA ROULI",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. SUTRA JAYA TOUR",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. RONAULI",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. HAROAN NAULI",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. CARLI",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. TAPIAN NAULI",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. SUMBER PRIMA JAYA",
+          "hari": "Senin"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "Kapal beroperasi bergantian menuju Pekan Nainggolan."
+    },
+    {
+      "grup": 19,
+      "arah": "Kembali",
+      "asal": "Janji Raja",
+      "tujuan": "Nainggolan",
+      "jam": [
+        "08.00"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. ANDIRI",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. ANUGERAH STAR",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. UPDATU TRANS",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. ARSIM JAYA TOUR",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. ANGEL 76",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. SANTUN NGOLU",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. DOSROHA ROULI",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. SUTRA JAYA TOUR",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. RONAULI",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. HAROAN NAULI",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. CARLI",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. TAPIAN NAULI",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. SUMBER PRIMA JAYA",
+          "hari": "Senin"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "Kapal beroperasi bergantian menuju Pekan Nainggolan."
+    },
+    {
+      "grup": 20,
+      "arah": "Berangkat",
+      "asal": "Nainggolan",
+      "tujuan": "Holbung",
+      "jam": [
+        "14.00"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. ANDIRI",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. ANUGERAH STAR",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. UPDATU TRANS",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. ARSIM JAYA TOUR",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. ANGEL 76",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. SANTUN NGOLU",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. DOSROHA ROULI",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. SUTRA JAYA TOUR",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. RONAULI",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. HAROAN NAULI",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. CARLI",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. TAPIAN NAULI",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. SUMBER PRIMA JAYA",
+          "hari": "Senin"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "Kapal beroperasi bergantian menuju Pekan Nainggolan."
+    },
+    {
+      "grup": 20,
+      "arah": "Kembali",
+      "asal": "Holbung",
+      "tujuan": "Nainggolan",
+      "jam": [
+        "07.00"
+      ],
+      "kapal": [
+        {
+          "nama": "KM. ANDIRI",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. ANUGERAH STAR",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. UPDATU TRANS",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. ARSIM JAYA TOUR",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. ANGEL 76",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. SANTUN NGOLU",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. DOSROHA ROULI",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. SUTRA JAYA TOUR",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. RONAULI",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. HAROAN NAULI",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. CARLI",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. TAPIAN NAULI",
+          "hari": "Senin"
+        },
+        {
+          "nama": "KM. SUMBER PRIMA JAYA",
+          "hari": "Senin"
+        }
+      ],
+      "penumpang": [
+        "Orang",
+        "Roda 2"
+      ],
+      "catatan": "Kapal beroperasi bergantian menuju Pekan Nainggolan."
     }
   ]
 }
