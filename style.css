@@ -171,7 +171,7 @@ thead th{
   position:sticky; top:0; z-index:1;
   background:linear-gradient(135deg,var(--brand-2),var(--brand-3));
   color:#fff; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:.04em;
-  text-align:left; padding:14px 18px; white-space:nowrap;
+  text-align:center; padding:14px 18px; white-space:nowrap;
 }
 tbody td{
   padding:16px 18px; border-bottom:1px solid var(--line);
