@@ -171,7 +171,7 @@ function tampilkanJadwal(data, hariAktif = "") {
         <tr>
           <td>
             <div class="rute-cell">
-              ${arahBadge}
+              
               <div class="rute-path"><span>${esc(item.asal)}</span><span class="arrow">→</span><span>${esc(item.tujuan)}</span></div>
               ${catatan}
             </div>
