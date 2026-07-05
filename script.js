@@ -235,7 +235,8 @@ function loadSafetyGallery() {
   const galleryEl = document.getElementById("galleryScroll");
   if (!galleryEl) return;
 
-  // try to load a manifest file listing images
+  // Sumber daftar gambar: manifest JSON (bukan directory listing — hosting
+  // statis seperti GitHub Pages tidak menyediakan itu, beda dgn server lokal).
   fetch("img/info-keselamatan-toba/list.json")
     .then((resp) => {
       if (!resp.ok) throw new Error("No manifest");
@@ -243,36 +244,8 @@ function loadSafetyGallery() {
     })
     .then((list) => renderSafetyGallery(list))
     .catch(() => {
-      // manifest not available — try fetching directory index HTML (if server exposes it)
-      fetch("img/info-keselamatan-toba/")
-        .then((r) => {
-          if (!r.ok) throw new Error("No dir listing");
-          return r.text();
-        })
-        .then((html) => {
-          try {
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(html, "text/html");
-            const anchors = Array.from(doc.querySelectorAll("a"));
-            const images = anchors
-              .map((a) => a.getAttribute("href"))
-              .filter((h) => h && /\.(png|jpe?g|gif|webp)$/i.test(h))
-              .map((h) => h.replace(/^\.\/|^\//, ""));
-
-            if (images.length) return renderSafetyGallery(images);
-            throw new Error("No images in dir listing");
-          } catch (e) {
-            throw e;
-          }
-        })
-        .catch(() => {
-          // final fallback to common filenames
-          const fallback = [
-            "info.png",
-            "Gemini_Generated_Image_dri9kzdri9kzdri9.png",
-          ];
-          renderSafetyGallery(fallback);
-        });
+      // manifest tak terbaca -> fallback ke nama file yang diketahui
+      renderSafetyGallery(["1-panduan-keselamatan.png", "2-barang-pribadi.png"]);
     });
 }
 
