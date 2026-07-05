@@ -159,6 +159,19 @@ body{
   margin-bottom:18px; flex-wrap:wrap;
 }
 .section-head h2{ font-size:20px; color:var(--brand-3); font-weight:800; }
+.schedule-actions{
+  display:flex; align-items:center; justify-content:space-between; gap:16px;
+  margin-bottom:16px; padding:14px 16px; border:1px solid var(--line);
+  border-radius:16px; background:linear-gradient(135deg, rgba(14,165,233,.08), rgba(99,102,241,.08));
+}
+.schedule-actions h3{ margin:0 0 4px; font-size:15px; color:var(--brand-3); }
+.schedule-actions p{ margin:0; font-size:13px; color:#475569; }
+.btn-action{
+  display:inline-flex; align-items:center; justify-content:center; padding:10px 14px;
+  border-radius:999px; background:var(--brand-2); color:#fff; font-weight:700;
+  text-decoration:none; white-space:nowrap; box-shadow:var(--shadow);
+}
+.btn-action:hover{ transform:translateY(-1px); }
 .result-count{
   font-size:12.5px; font-weight:700; color:var(--brand-2);
   background:rgba(29,78,216,.10); padding:5px 12px; border-radius:999px;
