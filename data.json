@@ -34,7 +34,7 @@
       "asal": "Onan Baru Pangururan",
       "tujuan": "Tulas",
       "jam": [
-        "14.00"
+        "14.00 WIB"
       ],
       "kapal": [
         {
@@ -58,7 +58,7 @@
       "asal": "Tulas",
       "tujuan": "Onan Baru Pangururan",
       "jam": [
-        "08.00"
+        "08.00 WIB"
       ],
       "kapal": [
         {
@@ -82,7 +82,7 @@
       "asal": "Onan Baru Pangururan",
       "tujuan": "Bonan Dolok",
       "jam": [
-        "14.00"
+        "14.00 WIB"
       ],
       "kapal": [
         {
@@ -106,7 +106,7 @@
       "asal": "Bonan Dolok",
       "tujuan": "Onan Baru Pangururan",
       "jam": [
-        "08.00"
+        "08.00 WIB"
       ],
       "kapal": [
         {
@@ -130,7 +130,7 @@
       "asal": "Onan Baru Pangururan",
       "tujuan": "Hasinggaan",
       "jam": [
-        "14.00"
+        "14.00 WIB"
       ],
       "kapal": [
         {
@@ -158,7 +158,7 @@
       "asal": "Hasinggaan",
       "tujuan": "Onan Baru Pangururan",
       "jam": [
-        "08.00"
+        "08.00 WIB"
       ],
       "kapal": [
         {
@@ -186,7 +186,7 @@
       "asal": "Onan Baru Pangururan",
       "tujuan": "Binangara",
       "jam": [
-        "14.00"
+        "14.00 WIB"
       ],
       "kapal": [
         {
@@ -210,7 +210,7 @@
       "asal": "Binangara",
       "tujuan": "Onan Baru Pangururan",
       "jam": [
-        "08.00"
+        "08.00 WIB"
       ],
       "kapal": [
         {
@@ -234,8 +234,8 @@
       "asal": "Onan Baru Pangururan",
       "tujuan": "Sihotang",
       "jam": [
-        "15.00",
-        "16.30 (anak sekolah)"
+        "15.00 WIB",
+        "16.30 WIB (anak sekolah)"
       ],
       "kapal": [
         {
@@ -263,8 +263,8 @@
       "asal": "Sihotang",
       "tujuan": "Onan Baru Pangururan",
       "jam": [
-        "08.00",
-        "06.30 (anak sekolah)"
+        "08.00 WIB",
+        "06.30 WIB (anak sekolah)"
       ],
       "kapal": [
         {
@@ -292,7 +292,7 @@
       "asal": "Onan Baru Pangururan",
       "tujuan": "Holbung",
       "jam": [
-        "14.00"
+        "14.00 WIB"
       ],
       "kapal": [
         {
@@ -360,7 +360,7 @@
       "asal": "Holbung",
       "tujuan": "Onan Baru Pangururan",
       "jam": [
-        "07.00"
+        "07.00 WIB"
       ],
       "kapal": [
         {
@@ -428,7 +428,7 @@
       "asal": "Onan Baru Pangururan",
       "tujuan": "Pinal",
       "jam": [
-        "14.00"
+        "14.00 WIB"
       ],
       "kapal": [
         {
@@ -448,7 +448,7 @@
       "asal": "Pinal",
       "tujuan": "Onan Baru Pangururan",
       "jam": [
-        "08.00"
+        "08.00 WIB"
       ],
       "kapal": [
         {
@@ -468,7 +468,7 @@
       "asal": "Onan Baru Pangururan",
       "tujuan": "Buntu Mauli",
       "jam": [
-        "14.00"
+        "14.00 WIB"
       ],
       "kapal": [
         {
@@ -508,7 +508,7 @@
       "asal": "Buntu Mauli",
       "tujuan": "Onan Baru Pangururan",
       "jam": [
-        "08.00"
+        "08.00 WIB"
       ],
       "kapal": [
         {
@@ -548,7 +548,7 @@
       "asal": "Onan Baru Pangururan",
       "tujuan": "Sabulan",
       "jam": [
-        "14.00"
+        "14.00 WIB"
       ],
       "kapal": [
         {
@@ -592,7 +592,7 @@
       "asal": "Sabulan",
       "tujuan": "Onan Baru Pangururan",
       "jam": [
-        "07.00"
+        "07.00 WIB"
       ],
       "kapal": [
         {
@@ -636,7 +636,7 @@
       "asal": "Onan Baru Pangururan",
       "tujuan": "Janji Raja",
       "jam": [
-        "14.00"
+        "14.00 WIB"
       ],
       "kapal": [
         {
@@ -704,7 +704,7 @@
       "asal": "Janji Raja",
       "tujuan": "Onan Baru Pangururan",
       "jam": [
-        "07.00"
+        "07.00 WIB"
       ],
       "kapal": [
         {
@@ -772,7 +772,7 @@
       "asal": "Onan Baru Pangururan",
       "tujuan": "Onan Sait",
       "jam": [
-        "14.00"
+        "14.00 WIB"
       ],
       "kapal": [
         {
@@ -796,7 +796,7 @@
       "asal": "Onan Sait",
       "tujuan": "Onan Baru Pangururan",
       "jam": [
-        "08.00"
+        "08.00 WIB"
       ],
       "kapal": [
         {
@@ -900,12 +900,12 @@
       "asal": "Mogang",
       "tujuan": "Sabulan",
       "jam": [
-        "08.00",
-        "10.00",
-        "12.00",
-        "14.00",
-        "16.00",
-        "18.00"
+        "08.00 WIB",
+        "10.00 WIB",
+        "12.00 WIB",
+        "14.00 WIB",
+        "16.00 WIB",
+        "18.00 WIB"
       ],
       "kapal": [
         {
@@ -949,12 +949,12 @@
       "asal": "Sabulan",
       "tujuan": "Mogang",
       "jam": [
-        "07.00",
-        "09.00",
-        "11.00",
-        "13.00",
-        "15.00",
-        "17.00"
+        "07.00 WIB",
+        "09.00 WIB",
+        "11.00 WIB",
+        "13.00 WIB",
+        "15.00 WIB",
+        "17.00 WIB"
       ],
       "kapal": [
         {
@@ -998,7 +998,7 @@
       "asal": "Mogang",
       "tujuan": "Holbung",
       "jam": [
-        "15.00"
+        "15.00 WIB"
       ],
       "kapal": [
         {
@@ -1066,7 +1066,7 @@
       "asal": "Holbung",
       "tujuan": "Mogang",
       "jam": [
-        "08.00"
+        "08.00 WIB"
       ],
       "kapal": [
         {
@@ -1134,7 +1134,7 @@
       "asal": "Mogang",
       "tujuan": "Janji Raja",
       "jam": [
-        "15.00"
+        "15.00 WIB"
       ],
       "kapal": [
         {
@@ -1202,7 +1202,7 @@
       "asal": "Janji Raja",
       "tujuan": "Mogang",
       "jam": [
-        "08.00"
+        "08.00 WIB"
       ],
       "kapal": [
         {
@@ -1270,8 +1270,8 @@
       "asal": "Mogang",
       "tujuan": "Buntu Mauli",
       "jam": [
-        "14.00",
-        "16.00 (anak sekolah)"
+        "14.00 WIB",
+        "16.00 WIB (anak sekolah)"
       ],
       "kapal": [
         {
@@ -1311,8 +1311,8 @@
       "asal": "Buntu Mauli",
       "tujuan": "Mogang",
       "jam": [
-        "06.30 (anak sekolah)",
-        "09.00 (Selasa Pekan Mogang)"
+        "06.30 WIB (anak sekolah)",
+        "09.00 WIB (Selasa Pekan Mogang)"
       ],
       "kapal": [
         {
@@ -1504,7 +1504,7 @@
       "asal": "Nainggolan",
       "tujuan": "Janji Raja",
       "jam": [
-        "14.00"
+        "14.00 WIB"
       ],
       "kapal": [
         {
@@ -1572,7 +1572,7 @@
       "asal": "Janji Raja",
       "tujuan": "Nainggolan",
       "jam": [
-        "08.00"
+        "08.00 WIB"
       ],
       "kapal": [
         {
@@ -1640,7 +1640,7 @@
       "asal": "Nainggolan",
       "tujuan": "Holbung",
       "jam": [
-        "14.00"
+        "14.00 WIB"
       ],
       "kapal": [
         {
@@ -1708,7 +1708,7 @@
       "asal": "Holbung",
       "tujuan": "Nainggolan",
       "jam": [
-        "07.00"
+        "07.00 WIB"
       ],
       "kapal": [
         {

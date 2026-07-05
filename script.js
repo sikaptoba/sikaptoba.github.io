@@ -195,7 +195,10 @@ function esc(s) {
     .replace(/"/g, "&quot;");
 }
 function hariClass(h) {
-  return String(h).toLowerCase().trim().replace(/\s+/g, "-");
+  return String(h)
+    .toLowerCase()
+    .trim()
+    .replace(/[^a-z0-9]+/g, "-");
 }
 
 function updateStats(data) {
@@ -233,7 +236,7 @@ function loadSafetyGallery() {
   if (!galleryEl) return;
 
   // try to load a manifest file listing images
-  fetch("img/info-keselamatan/list.json")
+  fetch("img/info-keselamatan-toba/list.json")
     .then((resp) => {
       if (!resp.ok) throw new Error("No manifest");
       return resp.json();
@@ -241,7 +244,7 @@ function loadSafetyGallery() {
     .then((list) => renderSafetyGallery(list))
     .catch(() => {
       // manifest not available — try fetching directory index HTML (if server exposes it)
-      fetch("img/info-keselamatan/")
+      fetch("img/info-keselamatan-toba/")
         .then((r) => {
           if (!r.ok) throw new Error("No dir listing");
           return r.text();
@@ -288,7 +291,7 @@ function renderSafetyGallery(list) {
     img.className = "gallery-image";
     img.src = /\//.test(filename)
       ? filename
-      : `img/info-keselamatan/${filename}`;
+      : `img/info-keselamatan-toba/${filename}`;
     img.alt = "Poster Keselamatan";
     stack.appendChild(img);
   });
@@ -299,7 +302,15 @@ function renderSafetyGallery(list) {
 // ============================
 // FILTER JADWAL
 // ============================
-const HARI_ID = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+const HARI_ID = [
+  "Minggu",
+  "Senin",
+  "Selasa",
+  "Rabu",
+  "Kamis",
+  "Jumat",
+  "Sabtu",
+];
 
 // "2026-07-08" -> "Rabu". Dibangun manual (bukan `new Date(string)`) supaya
 // tidak digeser timezone dan selalu dihitung sebagai tengah malam waktu lokal.
@@ -311,8 +322,14 @@ function hariDariTanggal(tanggal) {
 }
 
 // kapal ini beroperasi pada `hari` tertentu? (kosong/"Setiap Hari" = selalu jalan)
+// kolom "hari" boleh berisi lebih dari 1 hari, dipisah koma, mis. "Senin, Kamis"
 function kapalBeroperasi(kapal, hari) {
-  return !hari || !kapal.hari || kapal.hari === "Setiap Hari" || kapal.hari === hari;
+  if (!hari || !kapal.hari) return true;
+  if (kapal.hari === "Setiap Hari") return true;
+  return kapal.hari
+    .split(",")
+    .map((h) => h.trim())
+    .includes(hari);
 }
 
 function filterJadwal() {
