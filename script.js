@@ -266,11 +266,41 @@ function renderSafetyGallery(list) {
       ? filename
       : `img/info-keselamatan-toba/${filename}`;
     img.alt = "Poster Keselamatan";
+    img.addEventListener("click", () => openSafetyImage(img.src, img.alt));
     stack.appendChild(img);
   });
 
   galleryEl.appendChild(stack);
 }
+
+function openSafetyImage(src, alt) {
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("imageModalImg");
+  if (!modal || !modalImg) return;
+
+  modalImg.src = src;
+  modalImg.alt = alt || "Poster Keselamatan";
+  modal.hidden = false;
+  document.body.classList.add("modal-open");
+}
+
+function closeSafetyImage() {
+  const modal = document.getElementById("imageModal");
+  if (!modal) return;
+
+  modal.hidden = true;
+  document.body.classList.remove("modal-open");
+}
+
+document.addEventListener("click", (event) => {
+  if (event.target instanceof HTMLElement && event.target.dataset.close === "true") {
+    closeSafetyImage();
+  }
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") closeSafetyImage();
+});
 
 // ============================
 // FILTER JADWAL
