@@ -117,11 +117,12 @@ function loadDropdown() {
 // ============================
 // TAMPILKAN JADWAL
 // ============================
-function tampilkanJadwal(data) {
+function tampilkanJadwal(data, hariAktif = "") {
   const tbody = document.getElementById("jadwalBody");
   const count = document.getElementById("resultCount");
 
-  count.textContent = data.length + " keberangkatan";
+  count.textContent =
+    data.length + " keberangkatan" + (hariAktif ? ` · ${hariAktif}` : "");
   tbody.innerHTML = "";
 
   if (data.length === 0) {
@@ -144,13 +145,15 @@ function tampilkanJadwal(data) {
         : "";
 
       // chip kapal + badge hari (berwarna per hari)
+      // bila ada filter tanggal aktif, kapal yang tak beroperasi hari itu dipudarkan (bukan disembunyikan)
       const kapal =
         (item.kapal || [])
           .map((k) => {
             const hari = k.hari
               ? `<span class="hari-badge hari-${hariClass(k.hari)}">${esc(k.hari)}</span>`
               : "";
-            return `<span class="kapal-chip">${esc(k.nama)}${hari}</span>`;
+            const muted = !kapalBeroperasi(k, hariAktif) ? " chip-muted" : "";
+            return `<span class="kapal-chip${muted}">${esc(k.nama)}${hari}</span>`;
           })
           .join("") || "-";
 
@@ -217,6 +220,8 @@ function resetFilter() {
   document.getElementById("penumpang").value = "";
   const tgl = document.getElementById("tanggal");
   if (tgl) tgl.value = "";
+  const hint = document.getElementById("hariHint");
+  if (hint) hint.textContent = "";
   tampilkanJadwal(dataJSON.jadwal);
 }
 
@@ -294,17 +299,41 @@ function renderSafetyGallery(list) {
 // ============================
 // FILTER JADWAL
 // ============================
+const HARI_ID = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+
+// "2026-07-08" -> "Rabu". Dibangun manual (bukan `new Date(string)`) supaya
+// tidak digeser timezone dan selalu dihitung sebagai tengah malam waktu lokal.
+function hariDariTanggal(tanggal) {
+  if (!tanggal) return "";
+  const [y, m, d] = tanggal.split("-").map(Number);
+  if (!y || !m || !d) return "";
+  return HARI_ID[new Date(y, m - 1, d).getDay()];
+}
+
+// kapal ini beroperasi pada `hari` tertentu? (kosong/"Setiap Hari" = selalu jalan)
+function kapalBeroperasi(kapal, hari) {
+  return !hari || !kapal.hari || kapal.hari === "Setiap Hari" || kapal.hari === hari;
+}
+
 function filterJadwal() {
   const asal = document.getElementById("asal").value;
   const tujuan = document.getElementById("tujuan").value;
   const penumpang = document.getElementById("penumpang").value;
+  const tanggal = document.getElementById("tanggal").value;
+  const hari = hariDariTanggal(tanggal);
+
+  const hint = document.getElementById("hariHint");
+  if (hint) {
+    hint.textContent = hari ? `Menampilkan jadwal untuk hari ${hari}` : "";
+  }
 
   const hasil = dataJSON.jadwal.filter(
     (item) =>
       (asal === "" || item.asal === asal) &&
       (tujuan === "" || item.tujuan === tujuan) &&
-      (penumpang === "" || item.penumpang.includes(penumpang)),
+      (penumpang === "" || item.penumpang.includes(penumpang)) &&
+      (hari === "" || item.kapal.some((k) => kapalBeroperasi(k, hari))),
   );
 
-  tampilkanJadwal(hasil);
+  tampilkanJadwal(hasil, hari);
 }

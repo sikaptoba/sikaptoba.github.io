@@ -121,6 +121,10 @@ body{
   outline:none; border-color:var(--brand-2);
   box-shadow:0 0 0 4px rgba(29,78,216,.12);
 }
+.field-hint{
+  margin-top:7px; font-size:12px; font-weight:600; color:var(--brand-2);
+  min-height:14px;
+}
 .search-actions{ display:flex; gap:12px; margin-top:20px; flex-wrap:wrap; }
 .btn-search{
   flex:1; min-width:180px;
@@ -211,6 +215,11 @@ thead th:nth-child(4), tbody td:nth-child(4){ width:16%; }
 .hari-rabu{ background:rgba(37,99,235,.15); color:#1d4ed8; }
 .hari-senin{ background:rgba(139,92,246,.16); color:#6d28d9; }
 .hari-selasa{ background:rgba(245,158,11,.18); color:#b45309; }
+
+/* kapal yang tidak beroperasi pada tanggal/hari yang difilter -> dipudarkan, bukan disembunyikan */
+.kapal-chip.chip-muted{
+  opacity:.42; filter:grayscale(.4);
+}
 
 /* chip jam & penumpang */
 .jam-chip{
