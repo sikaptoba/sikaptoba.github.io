@@ -38,12 +38,14 @@ body {
 /* ===== HERO ===== */
 .hero {
   position: relative;
-  background: linear-gradient(
-    135deg,
-    var(--brand-1) -10%,
-    var(--brand-2) 55%,
-    var(--brand-3) 120%
-  );
+  background:
+    linear-gradient(
+      135deg,
+      rgba(56, 189, 248, 0.72) -10%,
+      rgba(29, 78, 216, 0.8) 55%,
+      rgba(10, 58, 168, 0.88) 120%
+    ),
+    url("img/hero-bg.png") center 60% / cover no-repeat;
   color: #fff;
   padding: 44px 20px 84px;
   overflow: hidden;
@@ -122,11 +124,13 @@ body {
   font-weight: 800;
   letter-spacing: 0.01em;
   line-height: 1.15;
+  text-shadow: 0 2px 14px rgba(2, 20, 60, 0.35);
 }
 .brand-text p {
   margin-top: 6px;
   font-size: clamp(14px, 1.6vw, 17px);
   opacity: 0.92;
+  text-shadow: 0 1px 10px rgba(2, 20, 60, 0.3);
 }
 .hero-wave {
   position: absolute;
