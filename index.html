@@ -9,18 +9,43 @@
     <link rel="stylesheet" href="style.css" />
 
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BKB43G878N"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-BKB43G878N"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-BKB43G878N');
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-BKB43G878N");
     </script>
   </head>
   <body>
     <!-- ===== HEADER / HERO ===== -->
     <header class="hero">
       <div class="hero-inner">
+        <div class="instansi-bar">
+          <div class="instansi-item">
+            <img
+              src="img/icon/logo-kab-samosir.png"
+              alt="Logo Pemerintah Kabupaten Samosir"
+              class="instansi-logo"
+            />
+            <span class="instansi-text">PEMERINTAH KABUPATEN<br />SAMOSIR</span>
+          </div>
+          <div class="instansi-item">
+            <img
+              src="img/icon/logo-dishub.png"
+              alt="Logo Dinas Perhubungan Kabupaten Samosir"
+              class="instansi-logo"
+            />
+            <span class="instansi-text"
+              >DINAS PERHUBUNGAN<br />KABUPATEN SAMOSIR</span
+            >
+          </div>
+        </div>
         <div class="brand">
           <img
             src="img/icon/logo-with-title.png"
@@ -31,8 +56,8 @@
           <div class="brand-text">
             <h1>Jadwal Kapal Penyeberangan</h1>
             <p>
-              Informasi jadwal &amp; keberangkatan kapal tradisional penyeberangan — Danau Toba, Wilayah Kabupaten
-             Samosir
+              Informasi jadwal &amp; keberangkatan kapal tradisional
+              penyeberangan — Danau Toba, Wilayah Kabupaten Samosir
             </p>
           </div>
         </div>
@@ -163,7 +188,10 @@
           <div class="schedule-actions">
             <div>
               <h3>Butuh update atau koreksi jadwal?</h3>
-              <p>Berikan masukan atau informasi terkait jadwal kapal tradisional melalui formulir berikut.</p>
+              <p>
+                Berikan masukan atau informasi terkait jadwal kapal tradisional
+                melalui formulir berikut.
+              </p>
             </div>
             <a
               class="btn-action"
@@ -228,7 +256,12 @@
     <div class="image-modal" id="imageModal" hidden>
       <div class="image-modal-backdrop" data-close="true"></div>
       <div class="image-modal-content">
-        <button class="image-modal-close" type="button" aria-label="Tutup" data-close="true">
+        <button
+          class="image-modal-close"
+          type="button"
+          aria-label="Tutup"
+          data-close="true"
+        >
           ×
         </button>
         <img id="imageModalImg" src="" alt="Gambar zoom" />
